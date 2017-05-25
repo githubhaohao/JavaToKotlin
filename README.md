@@ -208,7 +208,7 @@ var map = mapOf("a" to 1, "b" to 2, "c" to 3)
 
 map.forEach { key, value ->
 
-    println("$t, $u")
+    println("$key, $value")
 }
 
 // 或者
