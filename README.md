@@ -29,6 +29,7 @@ var lan = "Hello Kotlin"
 
 val lan = "Hello Kotlin"
 ```
+---
 
 ### 打印字符串
 **Java**
@@ -43,7 +44,7 @@ print("Hello Kotlin");
 
 println("Hello Kotlin");
 ```
-
+---
 ### 字符串模板
 **Java**
 ```java
@@ -73,7 +74,7 @@ var text = """
 // trimMargin() 去除连接符 `|`
 
 ```
-
+---
 ### 空声明
 **Java**
 ```java
@@ -83,7 +84,7 @@ String name = null;
 ```kotlin
 var name: String? = null // `?` 声明变量可为 null 
 ```
-
+---
 ### 判空
 **Java**
 ```java
@@ -100,7 +101,7 @@ name?.let{
     val len = name.length
 }
 ```
-
+---
 ### 逻辑表达式
 **Java**
 ```java
@@ -112,7 +113,7 @@ var y = if (x > 6)
             "x > 6"
         else "x <= 6"
 ```
-
+---
 ### 类型判断及转换
 **Java**
 ```java
@@ -128,6 +129,7 @@ if (obj is Person) {
     var p = obj //智能转换
 }
 ```
+---
 ### 区间
 **Java**
 ```java
@@ -160,7 +162,7 @@ for (i in 1..100 step 2) {}
 
 for (i in 100 donwTo 1 step 2) {}
 ```
-
+---
 ### list 和 map ( 针对 Java 8 之前版本 )
 **Java**
 ```java
@@ -217,7 +219,7 @@ for ((key, value) in map) {
 }
 
 ```
-
+---
 ### 开关语句
 **Java**
 ```java
@@ -262,7 +264,7 @@ var grade = when (score) {
 	else -> "Fail"
 }
 ```
-
+---
 ### 流水线
 **Java**
 ```java
@@ -296,7 +298,7 @@ list.map {
 
 }
 ```
-
+---
 ### 函数
 **Java**
 ```java
@@ -321,7 +323,7 @@ fun func(value: Int): Int {
 
 fun func(value: Int): Int = 1 * value
 ```
-
+---
 ### 类
 **Java**
 ```java
@@ -357,7 +359,7 @@ class Person private constructor() {
     }
 }
 ```
-
+---
 ### 静态方法（ 伴生对象 ）
 **Java**
 ```java
@@ -383,7 +385,7 @@ class Manager private constructor() {
 }
 
 ```
-
+---
 ### 实体类
 **Java**
 ```java
@@ -449,6 +451,8 @@ public class Person {
 data class Person(var name: String, var age: Int)
 
 ```
+
+---
 ### 解构
 **Java**
 ```java
@@ -464,7 +468,7 @@ var p = Person("name", 25)
 
 var (name, age) = p
 ```
-
+---
 ### 接口
 **Java**
 
@@ -509,7 +513,7 @@ class Book(): Readable {
    }
 }
 ```
-
+---
 ### 继承
 **Java**
 
@@ -574,7 +578,7 @@ class Student(private var school: String? = null, name: String): Person(name) {
     
 } 
 ```
-
+---
 ### 静态与非静态内部类
 **Java**
 
@@ -632,7 +636,7 @@ println(Outer.Nested().foo())
 println(Outer().Inner().foo())
 
 ```
-
+---
 ### 匿名内部类
 **Java**
 ```java
@@ -666,5 +670,5 @@ view.setOnClickListener(object : OnClickListener{
 })
 
 ```
-
+---
 ## 持续更新中。。。
