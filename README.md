@@ -1,8 +1,7 @@
 ## Java to Kotlin 语法清单
 
-<p align="center">![Markdown](http://i1.piimg.com/588795/9c8514f7c56bb889.jpg)</p>
-
-<p align="center">Today, at the Google I/O keynote, the Android team announced first-class support for Kotlin.</p>
+<p align="center"><img src="http://i1.piimg.com/588795/9c8514f7c56bb889.jpg"/></p>
+<p align="center">时刻对新事物保持好奇心</p>
 
 > Google IO 2017 宣布在 Android Studio 3.0 将默认支持 Kotlin 用于 Android . 请注意 Google 只是宣布 Kotlin 作为 Android 开发的一级语言，并没有说要用其取代 Java ，这里很多无脑媒体进行了过度解读。作为一名合格的程序员，首先要理性看待技术迭代更新，同时要对新事物保持强烈的好奇心。
 
