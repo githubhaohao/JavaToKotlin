@@ -671,4 +671,46 @@ view.setOnClickListener(object : OnClickListener{
 
 ```
 ---
+### 扩展
+**Java**
+```java
+// Java 类不能直接进行扩展
+```
+**Kotlin**
+
+```kotlin
+// 一般扩展
+class MyClass {
+   fun foo() = println("member")
+}
+
+fun MyClass.bar() = println("extension")
+
+MyClass().bar()
+
+//输出： extension
+
+```
+
+```kotlin
+// 扩展函数与成员函数相同
+class MyClass {
+
+   fun foo() = println("member")
+}
+
+fun MyClass.foo() = println("extension") // 扩展函数与成员函数相同时, 成员函数优先
+
+fun MyClass.foo(para: Int) = println("extension")
+
+MyClass().foo()
+
+MyClass().foo(0)
+
+//输出： 
+//     member
+//     extension
+      
+```
+---
 ## 持续更新中。。。
