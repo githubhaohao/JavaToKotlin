@@ -14,7 +14,7 @@ Kotlin 源于 JetBrains 的圣彼得堡团队，名称取自圣彼得堡附近�
 Kotlin 是一个基于 JVM 的编程语言，与 Java 有很深的渊源。它能与 Java 100% 互通，具备诸多 Java 尚不支持的新特性。Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript ，方便在没有 JVM 的设备上运行，可用于移动端以及 Web 开发，是一种全栈式开发语言。
 
 ## Java to Kotlin
-下面是这几天整理出来的 Java to Kotlin 主要语法，以便于你快速认识 Kotlin 这门语言。
+下面是 Java to Kotlin 主要语法，以便于你快速认识 Kotlin 这门语言。
 
 ### 变量
 **Java**
