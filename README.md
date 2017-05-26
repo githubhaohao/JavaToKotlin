@@ -204,7 +204,7 @@ list.forEach {
    println(it)
 }
 
-var map = mapOf("a" to 1, "b" to 2, "c" to 3)
+var map = mapOf(1 to "Java", 2 to "Kotlin", 3 to "iOS", 4 to "React Native")
 
 map.forEach { key, value ->
 
