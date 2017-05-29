@@ -713,4 +713,55 @@ MyClass().foo(0)
       
 ```
 ---
+### Kotlin Call Java
+**Java**
+```java
+public class Person {
+    private String name = null;
+    private int age = 0;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    @Override
+    public String toString() {
+        return "name : " + name + ", age : " + age;
+    }
+}
+
+```
+**Kotlin**
+
+```kotlin
+var p = Person()
+p.name = "haohao"
+p.age = 25
+
+println(p.toString())
+
+// name : haohao, age : 25
+
+```
+---
 ## 持续更新中。。。
