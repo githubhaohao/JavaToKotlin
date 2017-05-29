@@ -456,7 +456,7 @@ data class Person(var name: String, var age: Int)
 ### 解构
 **Java**
 ```java
-Person p = new Person("haohao", 35);
+Person p = new Person("haohao", 25);
 
 String name = p.getName();
 
