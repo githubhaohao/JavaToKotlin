@@ -764,4 +764,27 @@ println(p.toString())
 
 ```
 ---
+### Java Call Kotlin
+
+**Kotlin**
+
+```kotlin
+// Example.kt
+package demo
+
+class MyClass
+
+fun func() {
+
+}
+
+```
+
+**Java**
+```java
+new demo.MyClass();
+
+demo.ExampleKt.func();
+```
+---
 ## 持续更新中。。。
