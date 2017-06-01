@@ -787,4 +787,25 @@ new demo.MyClass();
 demo.ExampleKt.func();
 ```
 ---
+### 泛型
+**Java**
+```java
+public final class Wrapper<T> {
+    private T item;
+    public Wrapper(T item) {
+        this.item = item;
+    }
+
+    public T getItem() {
+        return item;
+    }
+}
+
+```
+**Kotlin**
+```kotlin
+class Wrapper<T>(val item: T)
+
+```
+---
 ## 持续更新中。。。
