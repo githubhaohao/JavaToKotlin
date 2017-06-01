@@ -6,7 +6,7 @@
 > Google IO 2017 宣布在 Android Studio 3.0 将默认支持 Kotlin 用于 Android . 请注意 Google 只是宣布 Kotlin 作为 Android 开发的一级语言，并没有说要用其取代 Java ，这里很多无脑媒体进行了过度解读。作为一名合格的程序员，首先要理性看待技术迭代更新，同时要对新事物保持强烈的好奇心。
 
 ## Kotlin 简介
-Kotlin 来自于捷克一家牛逼软件研发公司 JetBrains ，很多优秀的 IDE，如 IntelliJ IDEA、Pycharm、WebStorm 等都是它的杰作，包括 Google 官方的 Android 开发 IDE -- Android Studio ，也是 IntelliJ IDEA 的插件版。
+Kotlin 来自于捷克一家牛逼软件研发公司 JetBrains ，很多优秀的 IDE，如 IntelliJ IDEA、PyCharm、WebStorm 等都是它的杰作，包括 Google 官方的 Android 开发 IDE -- Android Studio ，也是 IntelliJ IDEA 的插件版。
 
 Kotlin 源于 JetBrains 的圣彼得堡团队，名称取自圣彼得堡附近的一个小岛 ( Kotlin Island ) 。JetBrains 在 2010 年首次推出 Kotlin 编程语言，并在次年将之开源。
 
@@ -823,6 +823,92 @@ class Wrapper<T>(val item: T)
 
 var wrapper = Wrapper("Hello Kotlin")
 println(wrapper.item)
+
+```
+---
+### 匿名函数 ( Lambda 表达式 )
+**Java (Java 8)**
+```java
+new Thread(() -> {
+
+    System.out.println("Hello Kotlin");
+    
+}).start();
+
+// 同下
+
+new Thread(new Runnable() {
+
+    @Override
+    public void run() {
+    
+        System.out.println("Hello Kotlin");
+	
+    }
+   
+}).start();
+
+```
+**Kotlin**
+```kotlin
+Thread(Runnable {
+
+    println("Hello Kotlin")
+    
+}).start()
+
+// Kotlin Lambda 表达式语法
+
+val sum = {x: Int, y: Int -> x + y }
+
+val sum1: (Int, Int) -> Int = {x, y -> x + y }
+
+val sum2 = fun(x: Int, y: Int): Int {
+    return x + y
+}
+
+println(sum(2,8))
+
+println(sum1(2,8))
+
+println(sum2(2,8))
+
+//输出：
+//    10
+//    10
+//    10
+//    Hello Kotlin
+```
+---
+### Kotlin 高阶函数
+**Java**
+```java
+// Java 不能直接实现高阶函数
+```
+**Kotlin**
+```kotlin
+// 高阶函数，即一个函数可作为高阶函数的参数
+fun superFunc(desc: String?, method: () -> String) {
+    println(desc)
+    println(method())
+}
+
+
+fun argFun() = "我是高阶函数的参数"
+
+//使用高阶函数
+
+superFunc("这是一个高阶函数 ", ::argFun)
+
+superFunc("这是一个高阶函数 ", { argFun() })
+
+superFunc("这是一个高阶函数 ") { argFun() }
+
+
+//输出：
+//    这是一个高阶函数 我是高阶函数的参数
+//    这是一个高阶函数 我是高阶函数的参数
+//    这是一个高阶函数 我是高阶函数的参数
 
 ```
 ---
