@@ -279,6 +279,12 @@ for(int i = 0; i < list.size(); i++ ) {
         System.out.println(list.get(i));
     }
 }
+
+//输出：
+//    Hello java
+//    Hello Android
+//    Hello Kotlin
+//    Hello iOS
 ```
 **Kotlin**
 ```kotlin
@@ -297,6 +303,12 @@ list.map {
     println(it)
 
 }
+
+//输出：
+//    Hello java
+//    Hello Android
+//    Hello Kotlin
+//    Hello iOS
 ```
 ---
 ### 函数
