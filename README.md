@@ -801,10 +801,16 @@ public final class Wrapper<T> {
     }
 }
 
+Wrapper<String> wrapper = new Wrapper<>("Hello Kotlin");
+System.out.println(wrapper.getItem());
+
 ```
 **Kotlin**
 ```kotlin
 class Wrapper<T>(val item: T)
+
+var wrapper = Wrapper("Hello Kotlin")
+println(wrapper.item)
 
 ```
 ---
