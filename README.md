@@ -889,7 +889,7 @@ println(sum2(2,8))
 ```kotlin
 // 高阶函数，即一个函数可作为高阶函数的参数
 fun superFunc(desc: String?, method: () -> String) {
-    println(desc)
+    print(desc)
     println(method())
 }
 
