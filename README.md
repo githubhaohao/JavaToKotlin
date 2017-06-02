@@ -6,7 +6,7 @@
 > Google IO 2017 宣布在 Android Studio 3.0 将默认支持 Kotlin 用于 Android . 请注意 Google 只是宣布 Kotlin 作为 Android 开发的一级语言，并没有说要用其取代 Java ，这里很多无脑媒体进行了过度解读。作为一名合格的程序员，首先要理性看待技术迭代更新，同时要对新事物保持强烈的好奇心。
 
 ## Kotlin 简介
-Kotlin 来自于捷克一家牛逼软件研发公司 JetBrains ，很多优秀的 IDE，如 IntelliJ IDEA、PyCharm、WebStorm 等都是它的杰作，包括 Google 官方的 Android 开发 IDE -- Android Studio ，也是 IntelliJ IDEA 的插件版。
+Kotlin 来自于捷克一家牛逼软件研发公司 JetBrains ，很多优秀的 IDE，如 IntelliJ IDEA、PyCharm、WebStorm 等都是它的杰作，包括 Google 官方的 Android IDE -- Android Studio ，也是 IntelliJ IDEA 的插件版。
 
 Kotlin 源于 JetBrains 的圣彼得堡团队，名称取自圣彼得堡附近的一个小岛 ( Kotlin Island ) 。JetBrains 在 2010 年首次推出 Kotlin 编程语言，并在次年将之开源。
 
@@ -923,7 +923,7 @@ new Thread(() -> {
         
 	view.load(data); //更新 UI   
 	
-     });
+    });
     
 }).start();
 
@@ -931,6 +931,7 @@ new Thread(() -> {
 **Kotlin (Kotlin Anko)**
 ```kotlin
 async {
+
     data = DataSource.obtain(); //耗时操作
     
     uiThread {
