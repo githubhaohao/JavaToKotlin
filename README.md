@@ -912,4 +912,30 @@ superFunc("这是一个高阶函数 ") { argFun() }
 
 ```
 ---
+### 简单异步
+**Java (Java 8)**
+```java
+new Thread(() -> {
+
+    data = DataSource.obtain(); //耗时操作
+    
+    runOnUiThread(() -> {
+        
+	view.load(data); //更新 UI   
+	
+     });
+    
+}).start();
+
+```
+**Kotlin (Kotlin Anko)**
+```kotlin
+async {
+    data = DataSource.obtain(); //耗时操作
+    
+    uiThread {
+        view.load(data); //更新 UI
+    }
+}
+---
 ## 持续更新中。。。
