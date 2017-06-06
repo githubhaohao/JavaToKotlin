@@ -944,7 +944,7 @@ async {
 ```java
 // Java 不能单独实现泛型函数
 ```
-**Kotlin (Kotlin Anko)**
+**Kotlin**
 ```kotlin
 fun <T> singletonList(item: T): List<T> {
     return arrayListOf(item)
