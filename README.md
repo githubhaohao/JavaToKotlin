@@ -939,3 +939,16 @@ async {
     }
 }
 ```
+### 泛型函数
+**Java**
+```java
+// Java 不能单独实现泛型函数
+```
+**Kotlin (Kotlin Anko)**
+```kotlin
+fun <T> singletonList(item: T): List<T> {
+    return arrayListOf(item)
+}
+
+val list = singletonList<String>("kotlin")
+```
