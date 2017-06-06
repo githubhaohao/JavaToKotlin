@@ -952,3 +952,17 @@ fun <T> singletonList(item: T): List<T> {
 
 val list = singletonList<String>("kotlin")
 ```
+### Kotlin 内联具体化
+
+**Kotlin**
+```kotlin
+inline fun <reified T ： Activity> Activity.gotoActivity() {
+
+    val intent = Intent(this, T::class.java)
+    this.startActivity(intent)
+}
+
+gotoActivity(NewActivity)
+
+```
+
