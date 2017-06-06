@@ -939,6 +939,7 @@ async {
     }
 }
 ```
+---
 ### 泛型函数
 **Java**
 ```java
@@ -952,6 +953,7 @@ fun <T> singletonList(item: T): List<T> {
 
 val list = singletonList<String>("kotlin")
 ```
+---
 ### Kotlin 内联具体化
 
 **Kotlin**
@@ -962,7 +964,9 @@ inline fun <reified T ： Activity> Activity.gotoActivity() {
     this.startActivity(intent)
 }
 
-gotoActivity(NewActivity)
+gotoActivity<NewActivity>()
 
 ```
+---
+### 持续更新中...
 
