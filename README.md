@@ -968,5 +968,26 @@ gotoActivity<NewActivity>()
 
 ```
 ---
+
+### Kotlin lazy 懒加载
+
+**Kotlin**
+```kotlin
+val lazyValue: String by lazy {
+    println("init")  //第一次使用时才被初始化 
+    "Hello Kotlin"
+}
+
+fun main(args: Array<String>) {
+    println(lazyValue)
+    println(lazyValue)
+}
+
+//输出：
+//    init
+//    Hello Kotlin
+//    Hello Kotlin
+```
+---
 ### 持续更新中...
 
