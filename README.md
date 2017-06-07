@@ -8,7 +8,7 @@
 ## Kotlin 简介
 Kotlin 来自于捷克一家牛逼软件研发公司 JetBrains ，很多优秀的 IDE，如 IntelliJ IDEA、PyCharm、WebStorm 等都是它的杰作，包括 Google 官方的 Android IDE -- Android Studio ，也是 IntelliJ IDEA 的插件版。
 
-Kotlin 源于 JetBrains 的圣彼得堡团队，名称取自圣彼得堡附近的一个小岛 ( Kotlin Island ) 。JetBrains 在 2010 年首次推出 Kotlin 编程语言，并在次年将之开源。
+Kotlin 源于 JetBrains 的圣彼得堡团队，名称取自圣彼得堡附近的一个小岛 ( Kotlin Island ) ，JetBrains 在 2010 年首次推出 Kotlin 编程语言，并在次年将之开源。
 
 ## Kotlin 的特点
 Kotlin 是一个基于 JVM 的编程语言，与 Java 有很深的渊源。它能与 Java 100% 互通，具备诸多 Java 尚不支持的新特性。Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript ，方便在没有 JVM 的设备上运行，可用于移动端以及 Web 开发，是一种全栈式开发语言。
