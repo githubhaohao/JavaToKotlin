@@ -989,5 +989,31 @@ fun main(args: Array<String>) {
 //    Hello Kotlin
 ```
 ---
+
+### Kotlin observable 观察者
+
+**Kotlin**
+```kotlin
+class Person{
+    public var name: String by Delegates.observable("init .. "){
+        property,oldValue,newValue -> println("property : $property, oldValue : $oldValue, newValue : $newValue")
+    }
+}
+
+fun main(args: Array<String>) {
+    val person = Person()
+
+    println(person.name)
+
+    person.name = "haohao"
+    person.name = "nannan"
+}
+
+//输出：
+//    init .. 
+//    property : var Person.name: kotlin.String, oldValue : init .. , newValue : haohao
+//    property : var Person.name: kotlin.String, oldValue : haohao, newValue : nannan
+```
+---
 ### 持续更新中...
 
