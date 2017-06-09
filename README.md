@@ -954,6 +954,25 @@ fun <T> singletonList(item: T): List<T> {
 val list = singletonList<String>("kotlin")
 ```
 ---
+### 嵌套函数
+**Java**
+```java
+// Java 不支持嵌套函数
+```
+**Kotlin**
+```kotlin
+fun main(args: Array<String>) {
+
+    fun sayHello() {
+        println("Hello Kotlin")
+    }
+
+    sayHello();
+}
+// 输出：
+//    Hello Kotlin
+```
+---
 ### Kotlin 内联具体化
 
 **Kotlin**
@@ -1013,6 +1032,30 @@ fun main(args: Array<String>) {
 //    init .. 
 //    property : var Person.name: kotlin.String, oldValue : init .. , newValue : haohao
 //    property : var Person.name: kotlin.String, oldValue : haohao, newValue : nannan
+```
+---
+### Kotlin 闭包
+
+**Kotlin**
+```kotlin
+val plus = {x: Int, y: Int -> println("$x plus $y is ${x+y}")}
+
+val hello = {println("Hello Kotlin")}
+
+fun main(args: Array<String>) { 
+
+    {x: Int, y: Int ->
+        println("$x plus $y is ${x+y}")
+    }(2, 8)         // 自执行的闭包
+
+    plus(2, 8)
+    hello()
+}
+
+//输出：
+//    2 plus 8 is 10
+//    2 plus 8 is 10
+//    Hello Kotlin
 ```
 ---
 ### 持续更新中...
