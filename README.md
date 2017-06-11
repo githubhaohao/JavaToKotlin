@@ -224,7 +224,7 @@ for ((key, value) in map) {
 **Java**
 ```java
 int score = // some score
-var grade: String
+String grade;
 switch (score) {
 	case 10:
 	case 9:
