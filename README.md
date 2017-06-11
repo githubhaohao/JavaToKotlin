@@ -223,8 +223,8 @@ for ((key, value) in map) {
 ### 开关语句
 **Java**
 ```java
-int score = // some score;
-String result;
+int score = // some score
+var grade: String
 switch (score) {
 	case 10:
 	case 9:
