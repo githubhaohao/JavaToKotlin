@@ -556,17 +556,15 @@ public final class Student extends Person {
     private String school = null;
 
     public Student(String name, String school) {
-        this.school = school;
         super(name);
+        this.school = school;
     }
 
-    @override
+    @Override
     public void sayHello() {
         super.sayHello();
         System.out.println("Hello Student");
     }
-
-
 }
 ```
 **Kotlin**
